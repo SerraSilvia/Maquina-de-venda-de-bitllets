@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45a9ad0b-dc98-4b0a-97db-9eb6247b9d89" name="Changes" comment="Add ascci art + opcions" />
+    <list default="true" id="45a9ad0b-dc98-4b0a-97db-9eb6247b9d89" name="Changes" comment="Add ascci art + opcions">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -60,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1704018699450</updated>
-      <workItem from="1704018700589" duration="7746000" />
+      <workItem from="1704018700589" duration="8845000" />
     </task>
     <task id="LOCAL-00001" summary="creació de projecte">
       <option name="closed" value="true" />
