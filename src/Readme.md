@@ -1,6 +1,9 @@
 # Aplicació per fer un software d' una màquina de venda de bitllets: FGC i TMB.
 
-Es tracta de desenvolupar el nou software de les màquines de venda de bitllets de tren dels FGC 
+Integrants: Miguel Ángel Garzón i Silvia Serra
+
+
+L'aplicació tracta de desenvolupar el nou software de les màquines de venda de bitllets de tren dels FGC 
 i de metro TMB on es podran comprar:
 
 * 1: **Bitllet senzill**
