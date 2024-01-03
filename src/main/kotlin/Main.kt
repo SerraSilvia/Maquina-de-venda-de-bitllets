@@ -4,29 +4,42 @@ import org.example.RESET
 import kotlin.math.abs
 
 fun main() {
-    printAsciiArt()
-    val paraulaSeguretat = 4321
-    var seguirComprant = "n".lowercase()
-    var exist = false
-    var preuTotalBitllets = 0.0
 
-    do {
-        val (opcio, preu) = opcioBitllet()
+    while (true) {
+        printAsciiArt()
+        // Estado inicial
+        var seguirComprant = "n".lowercase()
+        var exist = false
+        var preuTotalBitllets = 0.0
 
-        if (opcio != 6) {
-            val (preuPerBitllet, zona) = zonaBitllet(preu)
-            preuTotalBitllets += quantitatBitllets(preuPerBitllet)
+        val paraulaSeguretat = 4321
 
-            println("Ha escollit la opció: $opcio, zona $zona ")
-            println("El preu del bitllet és de: $preuPerBitllet €")
-            println("El preu total dels bitllets és de: $preuTotalBitllets €")
-        }
+        do {
+            val (opcio, preu) = opcioBitllet()
 
-        if (seguirComprant == "n") {
-            exist = true
-            gestionarCompra(preuTotalBitllets)
-        }
+            if (opcio != 6) {
+                val (preuPerBitllet, zona) = zonaBitllet(preu)
+                val detall = "Opció: $opcio, Zona: $zona - Preu: $preuPerBitllet €"
+                detallsCompra.add(detall)
 
-    } while (opcio != 6 && opcio != paraulaSeguretat && !exist)
-    println("Fi de programa")
+                preuTotalBitllets += quantitatBitllets(preuPerBitllet)
+
+                println("Ha escollit la opció: $opcio, zona $zona ")
+                println("El preu del bitllet és de: $preuPerBitllet €")
+                println("El preu total dels bitllets és de: $preuTotalBitllets €")
+            }
+
+            if (seguirComprant == "n") {
+                exist = true
+                gestionarCompra(preuTotalBitllets)
+                imprimirTiquet(preuTotalBitllets)
+            }
+
+        } while (opcio != 6 && opcio != paraulaSeguretat && !exist)
+
+        println("Fi de compra. Tornant a l'estat inicial.")
+    }
 }
+
+
+

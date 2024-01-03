@@ -117,8 +117,11 @@ fun quantitatBitllets (preuPerBitllet: Double): Double {
 }
 
 /**
- * Función que gestiona la compra de billetes, pagos y cambio.
- * @param totalCompra El monto total a pagar.
+ * Funció que gestiona la compra de billets, pagos y canvi.
+ * @param totalCompra El capital total a pagar.
+ * @author Miguel Angel Garzón
+ * @since 03/12/2023
+ * La funció no retorna cap valor específic, utilitza println per mostrar informació.
  */
 fun gestionarCompra(totalCompra: Double) {
     var cantidadPagada = 0.0
@@ -139,7 +142,11 @@ fun gestionarCompra(totalCompra: Double) {
         if (restaPagar <= 0) {
             cambio = cantidadPagada - totalCompra
             println("Ha pagat l'import total. El seu canvi és de $cambio€.")
-            break
+            seguirComprando = false.toString() // Sale del bucle
+        } else {
+            println("Vols introduir més monedes o bitllets? [S,N]")
+            val respuesta = readln().lowercase()
+            seguirComprando = (respuesta == "s").toString()
         }
 
         println("Vols introduir més monedes o bitllets? [S,N]")
@@ -158,3 +165,53 @@ fun gestionarCompra(totalCompra: Double) {
         }
     }
 }
+
+
+var seguirComprant = "n".lowercase()
+var exist = false
+var preuTotalBitllets = 0.0
+var detallsCompra: MutableList<String> = mutableListOf()
+
+/**
+ * Funció que pregunta al usuari si desitja un tiquet i, en caso afirmatiu, imprimeix el detall de la compra.
+ * Despres, reinicia el estat del programa.
+ * @author Miguel Angel Garzón
+ * @since 04/12/2023
+ * @param preuTotalBitllets El preu total dels billets comprats.
+ */
+fun imprimirTiquet(preuTotalBitllets: Double) {
+    println("$BLUE_BOLD Vols el tiquet? (S/N) $RESET")
+    val volsTiquet = readln().lowercase()
+
+    if (volsTiquet == "s") {
+        println("____TIQUET____")
+
+
+        println("Resum de la compra:")
+        for (detall in detallsCompra) {
+            println(detall)
+        }
+
+        println("______________")
+        println("Reculli el seu tiquet")
+    }
+
+    // Reiniciar estado del programa
+    resetearEstado()
+    println("Adeu")
+}
+
+/**
+ * Funció que reinicia el estat del programa.
+ * @author Miguel Angel Garzón
+ * @since 04/12/2023
+ */
+fun resetearEstado() {
+    // Reinicia las variables al estado original
+    seguirComprant = "n".lowercase()
+    exist = false
+    preuTotalBitllets = 0.0
+    detallsCompra.clear()
+}
+
+
