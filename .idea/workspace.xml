@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45a9ad0b-dc98-4b0a-97db-9eb6247b9d89" name="Changes" comment="commit con archivo nuevo y unico para funciones, añadido accion de ingreso de dinero por parte de user y algun retoque en main, IMPORTANTE no esta opcion ticket">
+    <list default="true" id="45a9ad0b-dc98-4b0a-97db-9eb6247b9d89" name="Changes" comment="commit con la aplicacion funcionando correctamente">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/functionsAditionals.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functionsAditionals.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -154,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704240158974</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="commit con la aplicacion funcionando correctamente">
+      <option name="closed" value="true" />
+      <created>1704325701350</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704325701350</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +185,7 @@
     <MESSAGE value="Update workspace.xml" />
     <MESSAGE value="Update main" />
     <MESSAGE value="commit con archivo nuevo y unico para funciones, añadido accion de ingreso de dinero por parte de user y algun retoque en main, IMPORTANTE no esta opcion ticket" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit con archivo nuevo y unico para funciones, añadido accion de ingreso de dinero por parte de user y algun retoque en main, IMPORTANTE no esta opcion ticket" />
+    <MESSAGE value="commit con la aplicacion funcionando correctamente" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit con la aplicacion funcionando correctamente" />
   </component>
 </project>

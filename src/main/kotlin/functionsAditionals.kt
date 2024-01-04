@@ -2,6 +2,7 @@ import org.example.BLUE_BOLD
 import org.example.CYAN_BOLD
 import org.example.RESET
 import kotlin.math.abs
+import kotlin.math.round
 
 /**
  * És una funció de benvinguda al programa amb un ascii art
@@ -101,6 +102,7 @@ fun zonaBitllet (preu: Double): Pair <Double, Int> {
         else -> preu
     }, zona)
 }
+
 /**
  * És una funció que permet escollir la quantitat de bitllets i calcular el preu
  * @author Sivia Serra
@@ -108,10 +110,10 @@ fun zonaBitllet (preu: Double): Pair <Double, Int> {
  * @see abs et retorna els negatius en positiu i fa el càlcul en positiu
  * @return preu total
  */
-fun quantitatBitllets (preuPerBitllet: Double): Double {
+fun quantitatBitllets(preuPerBitllet: Double): Double {
     println("$BLUE_BOLD Ingressi el nombre de bitllets  $RESET")
 
-    val nombreBitllets = abs(readln().toInt())// abs te devuelve el valor absoluto
+    val nombreBitllets = abs(readln().toInt()) // abs te devuelve el valor absoluto
 
     return (preuPerBitllet * nombreBitllets)
 }
@@ -123,46 +125,29 @@ fun quantitatBitllets (preuPerBitllet: Double): Double {
  * @since 03/12/2023
  * La funció no retorna cap valor específic, utilitza println per mostrar informació.
  */
+
 fun gestionarCompra(totalCompra: Double) {
     var cantidadPagada = 0.0
     var cambio: Double
-    val restaPagar = totalCompra - cantidadPagada
-    println("Vols seguir comprant? [S,N]")
-    var seguirComprando = readln().lowercase()
+    var tiquetSolicitado = false
 
-    while (seguirComprando == "s") {
+    do {
         println("Introdueixi monedes o billets, recordi, si us plau, aquesta màquina només accepta monedes de: 0.01€, 0.02€, 0.05€, 0.10€, 0.20€, 0.50€, 1€, 2€. I bitllets de 5€, 10€, 15€, 20€, 50€")
-        val cantidadIntroducida = readln().toDouble()
+        val cantidadIntroducida = readLine()?.toDouble() ?: 0.0
 
         cantidadPagada += cantidadIntroducida
-        val restaPagar = totalCompra - cantidadPagada
+        cambio = round((cantidadPagada - totalCompra) * 100) / 100
+        println("Ha introduït ${round(cantidadIntroducida * 100) / 100}€. Li resta pagar ${round(maxOf(0.0, cambio) * 100) / 100}€.")
 
-        println("Ha introduït $cantidadIntroducida€. Li resta pagar $restaPagar€.")
-
-        if (restaPagar <= 0) {
-            cambio = cantidadPagada - totalCompra
-            println("Ha pagat l'import total. El seu canvi és de $cambio€.")
-            seguirComprando = false.toString() // Sale del bucle
-        } else {
-            println("Vols introduir més monedes o bitllets? [S,N]")
-            val respuesta = readln().lowercase()
-            seguirComprando = (respuesta == "s").toString()
+        if (cambio >= 0 && !tiquetSolicitado) {
+            println("Ha pagat l'import total. El seu canvi és de ${round(cambio * 100) / 100}€.")
+            tiquetSolicitado = true
         }
 
-        println("Vols introduir més monedes o bitllets? [S,N]")
-        seguirComprando = readln().lowercase()
-    }
+    } while (cambio < 0)
 
-    if (seguirComprando == "n") {
-        val cantidadBilletsComprats = (totalCompra / preuTipusBitllet(1)).toInt()
-        println("Ha comprat $cantidadBilletsComprats bitllet(s). Ha de pagar $totalCompra€.")
-
-        if (cantidadPagada >= totalCompra) {
-            cambio = cantidadPagada - totalCompra
-            println("Ha pagat l'import total. El seu canvi és de $cambio€.")
-        } else {
-            println("El pagament no és suficient. Faltant $restaPagar€.")
-        }
+    if (tiquetSolicitado) {
+        imprimirTiquet(totalCompra)
     }
 }
 
