@@ -1,6 +1,7 @@
 import org.example.BLUE_BOLD
 import org.example.CYAN_BOLD
 import org.example.RESET
+import java.text.DecimalFormat
 import kotlin.math.abs
 import kotlin.math.round
 
@@ -111,9 +112,17 @@ fun zonaBitllet (preu: Double): Pair <Double, Int> {
  * @return preu total
  */
 fun quantitatBitllets(preuPerBitllet: Double): Double {
-    println("$BLUE_BOLD Ingressi el nombre de bitllets  $RESET")
+    println("$BLUE_BOLD Ingressi el nombre de bitllets (màxim 3 bitllets)  $RESET")
+    var nombreBitllets = 0
 
-    val nombreBitllets = abs(readln().toInt()) // abs te devuelve el valor absoluto
+    do {
+        nombreBitllets = abs(readln().toInt()) // abs te devuelve el valor absoluto
+
+        if (nombreBitllets <= 0 || nombreBitllets > 3)
+            println("El màxim nombre de bitllets es de 3, ha introduït un nombre erroni")
+
+    } while(nombreBitllets <= 0 || nombreBitllets > 3)
+
 
     return (preuPerBitllet * nombreBitllets)
 }
@@ -128,27 +137,27 @@ fun quantitatBitllets(preuPerBitllet: Double): Double {
 
 fun gestionarCompra(totalCompra: Double) {
     var cantidadPagada = 0.0
-    var cambio: Double
-    var tiquetSolicitado = false
+    var cantidadADeber: Double = totalCompra
 
     do {
         println("Introdueixi monedes o billets, recordi, si us plau, aquesta màquina només accepta monedes de: 0.01€, 0.02€, 0.05€, 0.10€, 0.20€, 0.50€, 1€, 2€. I bitllets de 5€, 10€, 15€, 20€, 50€")
         val cantidadIntroducida = readLine()?.toDouble() ?: 0.0
 
         cantidadPagada += cantidadIntroducida
-        cambio = round((cantidadPagada - totalCompra) * 100) / 100
-        println("Ha introduït ${round(cantidadIntroducida * 100) / 100}€. Li resta pagar ${round(maxOf(0.0, cambio) * 100) / 100}€.")
+        cantidadADeber =  cantidadPagada - totalCompra
 
-        if (cambio >= 0 && !tiquetSolicitado) {
-            println("Ha pagat l'import total. El seu canvi és de ${round(cambio * 100) / 100}€.")
-            tiquetSolicitado = true
+        if (cantidadADeber < 0.0)
+            println("Ha introduït ${cantidadIntroducida}€. Li resta pagar ${abs(cantidadADeber)}€.")
+
+        if (cantidadADeber >= 0.0) {
+            val formato = DecimalFormat("#.##")
+
+            println("Ha pagat l'import total. El seu canvi és de ${formato.format(cantidadADeber)}€.")
         }
 
-    } while (cambio < 0)
+    } while (cantidadADeber < 0.0)
 
-    if (tiquetSolicitado) {
-        imprimirTiquet(totalCompra)
-    }
+    imprimirTiquet(totalCompra)
 }
 
 

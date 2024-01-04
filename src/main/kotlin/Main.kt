@@ -27,17 +27,21 @@ fun main() {
                 println("Ha escollit la opció: $opcio, zona $zona ")
                 println("El preu del bitllet és de: $preuPerBitllet €")
                 println("El preu total dels bitllets és de: $preuTotalBitllets €")
-            }
 
-            if (seguirComprant == "n") {
-                exist = true
-                gestionarCompra(preuTotalBitllets)
-                imprimirTiquet(preuTotalBitllets)
+                println("$BLUE_BOLD Vols seguir comprant? [S,N] $RESET")
+                seguirComprant = readln().lowercase()
+
+                if (seguirComprant == "n") {
+                    exist = true
+                    gestionarCompra(preuTotalBitllets)
+                }
             }
 
         } while (opcio != 6 && opcio != paraulaSeguretat && !exist)
 
         println("Fi de compra. Tornant a l'estat inicial.")
+        println("Premi qualsevol tecla per continuar...")
+        readln()
     }
 }
 
