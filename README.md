@@ -46,27 +46,27 @@ Per últim es triarà entre si es vol imprimir ticket de compra o no.
 
 - Funció de benvinguda al programa:
 
->![Benvinguda al programa](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\funcioBenvinguda.JPG)
+>![Benvinguda al programa](./src/images/funcioBenvinguda.JPG)
 
 - Funció principal:
 
->![Funció principal](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\funcioMain.JPG)
+>![Funció principal](./src/images/funcioMain.JPG)
 
 - Funció que permet escollir zones:
 
->![Funció d'escollir zones](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\funcioZones.JPG)
+>![Funció d'escollir zones](./src/images/funcioZones.JPG)
 
 - Llibreria que fa servir colors:
 
->![Console colors](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\consolecolors.JPG)
+>![Console colors](./src/images/consolecolors.JPG)
 
 - Mostra d'execució del programa:
 
->![Execució de programa](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\execucioPrograma.JPG)
+>![Execució de programa](./src/images/execucioPrograma.JPG)
 
 - Mostra d'execució del programa, retorna canvi: 
 
->![Execució de programa retorna canvi](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\execucioProgramaCanvi.JPG)
+>![Execució de programa retorna canvi](./src/images/execucioProgramaCanvi.JPG)
 
 ### Enllaços
 
