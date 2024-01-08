@@ -17,7 +17,8 @@ dependencies {
 }
 
 tasks.dokkaHtml.configure {
-    outputDirectory.set(buildDir.resolve("dokka"))
+    //outputDirectory.set(buildDir.resolve("dokka"))
+    outputDirectory.set(project.rootDir.resolve("document/dokka"))
 }
 
 tasks.test {

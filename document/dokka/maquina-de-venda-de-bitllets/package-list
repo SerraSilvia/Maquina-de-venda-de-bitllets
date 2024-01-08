@@ -1,0 +1,37 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+$dokka.location:////PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/index.html
+$dokka.location:/FunctionsAditionalsKt///PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/index.html
+$dokka.location:/FunctionsAditionalsKt/gestionarCompra/#kotlin.Double/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/gestionar-compra.html
+$dokka.location:/FunctionsAditionalsKt/getDetallsCompra/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/get-detalls-compra.html
+$dokka.location:/FunctionsAditionalsKt/getExist/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/get-exist.html
+$dokka.location:/FunctionsAditionalsKt/getPreuTotalBitllets/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/get-preu-total-bitllets.html
+$dokka.location:/FunctionsAditionalsKt/getSeguirComprant/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/get-seguir-comprant.html
+$dokka.location:/FunctionsAditionalsKt/imprimirTiquet/#kotlin.Double/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/imprimir-tiquet.html
+$dokka.location:/FunctionsAditionalsKt/opcioBitllet/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/opcio-bitllet.html
+$dokka.location:/FunctionsAditionalsKt/preuTipusBitllet/#kotlin.Int/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/preu-tipus-bitllet.html
+$dokka.location:/FunctionsAditionalsKt/printAsciiArt/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/print-ascii-art.html
+$dokka.location:/FunctionsAditionalsKt/quantitatBitllets/#kotlin.Double/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/quantitat-bitllets.html
+$dokka.location:/FunctionsAditionalsKt/resetearEstado/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/resetear-estado.html
+$dokka.location:/FunctionsAditionalsKt/setDetallsCompra/#kotlin.collections.MutableList[kotlin.String]/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/set-detalls-compra.html
+$dokka.location:/FunctionsAditionalsKt/setExist/#kotlin.Boolean/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/set-exist.html
+$dokka.location:/FunctionsAditionalsKt/setPreuTotalBitllets/#kotlin.Double/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/set-preu-total-bitllets.html
+$dokka.location:/FunctionsAditionalsKt/setSeguirComprant/#kotlin.String/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/set-seguir-comprant.html
+$dokka.location:/FunctionsAditionalsKt/zonaBitllet/#kotlin.Double/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-functions-aditionals-kt/zona-bitllet.html
+$dokka.location:/MainKt///PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-main-kt/index.html
+$dokka.location:/MainKt/main/#/PointingToDeclaration/maquina-de-venda-de-bitllets/[root]/-main-kt/main.html
+$dokka.location:org.example////PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/index.html
+$dokka.location:org.example/ConsoleColorsKt///PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-console-colors-kt/index.html
+$dokka.location:org.example/UtilitiesKt///PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/index.html
+$dokka.location:org.example/UtilitiesKt/getScan/#/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/get-scan.html
+$dokka.location:org.example/UtilitiesKt/readBoolean/#kotlin.String#kotlin.String/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-boolean.html
+$dokka.location:org.example/UtilitiesKt/readChar/#kotlin.String#kotlin.String#kotlin.Int/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-char.html
+$dokka.location:org.example/UtilitiesKt/readChar/#kotlin.String#kotlin.String/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-char.html
+$dokka.location:org.example/UtilitiesKt/readFloat/#kotlin.String#kotlin.String#kotlin.String#kotlin.Float#kotlin.Float/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-float.html
+$dokka.location:org.example/UtilitiesKt/readFloat/#kotlin.String#kotlin.String/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-float.html
+$dokka.location:org.example/UtilitiesKt/readInt/#kotlin.String#kotlin.String#kotlin.String#kotlin.Int#kotlin.Int/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-int.html
+$dokka.location:org.example/UtilitiesKt/readInt/#kotlin.String#kotlin.String/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-int.html
+$dokka.location:org.example/UtilitiesKt/readSentence/#kotlin.String#kotlin.String/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-sentence.html
+$dokka.location:org.example/UtilitiesKt/readWord/#kotlin.String#kotlin.String/PointingToDeclaration/maquina-de-venda-de-bitllets/org.example/-utilities-kt/read-word.html
+org.example
+

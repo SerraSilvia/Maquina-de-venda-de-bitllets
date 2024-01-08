@@ -4,15 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45a9ad0b-dc98-4b0a-97db-9eb6247b9d89" name="Changes" comment="FIX: move readme from folder">
-      <change afterPath="$PROJECT_DIR$/src/images/consolecolors.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/execucioPrograma.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/execucioProgramaCanvi.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/funcioBenvinguda.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/funcioMain.JPG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/funcioZones.JPG" afterDir="false" />
+    <list default="true" id="45a9ad0b-dc98-4b0a-97db-9eb6247b9d89" name="Changes" comment="ADD: Readme images and links">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +56,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
@@ -127,7 +124,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704018699450</updated>
       <workItem from="1704018700589" duration="13031000" />
-      <workItem from="1704745346408" duration="3725000" />
+      <workItem from="1704745346408" duration="4408000" />
     </task>
     <task id="LOCAL-00001" summary="creació de projecte">
       <option name="closed" value="true" />
@@ -209,7 +206,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704745691986</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="ADD: Readme images and links">
+      <option name="closed" value="true" />
+      <created>1704749742998</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704749742998</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -246,6 +251,7 @@
     <MESSAGE value="commit con archivo nuevo y unico para funciones, añadido accion de ingreso de dinero por parte de user y algun retoque en main, IMPORTANTE no esta opcion ticket" />
     <MESSAGE value="commit con la aplicacion funcionando correctamente" />
     <MESSAGE value="FIX: move readme from folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: move readme from folder" />
+    <MESSAGE value="ADD: Readme images and links" />
+    <option name="LAST_COMMIT_MESSAGE" value="ADD: Readme images and links" />
   </component>
 </project>
