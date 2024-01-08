@@ -31,7 +31,7 @@ s'haurà de pagar el preu total i la màquina imprimirà el bitllet que retornar
 Per últim es triarà entre si es vol imprimir ticket de compra o no.
 
 
-#### Un operari pot aturar la màquina:
+#### Un operari pot aturar la màquina
 > [!WARNING]  
 > La màquina de venda de bitllets podrà ser aturada si un operari autoritzat introdueix el codi secret 4321.
 
@@ -40,3 +40,40 @@ Per últim es triarà entre si es vol imprimir ticket de compra o no.
 > [!TIP]
 >  Executa el comando gradlew dokkaHtml des del directori del projecte.
 >  Recorda que has de tenir instal·lat el JDK en la teva màquina.
+
+
+## Imatges de codi
+
+- Funció de benvinguda al programa:
+
+>![Benvinguda al programa](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\funcioBenvinguda.JPG)
+
+- Funció principal:
+
+>![Funció principal](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\funcioMain.JPG)
+
+- Funció que permet escollir zones:
+
+>![Funció d'escollir zones](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\funcioZones.JPG)
+
+- Llibreria que fa servir colors:
+
+>![Console colors](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\consolecolors.JPG)
+
+- Mostra d'execució del programa:
+
+>![Execució de programa](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\execucioPrograma.JPG)
+
+- Mostra d'execució del programa, retorna canvi: 
+
+>![Execució de programa retorna canvi](C:\Users\Silvia\IdeaProjects\maquina-de-venda-de-bitllets\src\images\execucioProgramaCanvi.JPG)
+
+### Enllaços
+
+[Llibreria de Raimon Izard](https://github.com/raimonizard/kotlin)
+
+[Crear ascii art](https://www.asciiart.eu/#google_vignette)
+
+[Documentació GitHub](https://docs.github.com/es)
+
+
